@@ -8,53 +8,56 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>飛遊星</h1>
-    <p>自作曲・Webツールなどを公開しています。</p>
+  <header class="site-header">
+    <div class="container">
+      <p class="site-label">Official Site</p>
+      <h1>飛遊星</h1>
+      <p class="site-description">
+        自作曲・Webツールなどを公開しています。
+      </p>
 
-    <nav>
-      <a href="#profile">プロフィール</a> |
-      <a href="#music">自作曲</a> |
-      <a href="#youtube">YouTube</a> |
-      <a href="#tools">Webツール</a>
-    </nav>
+      <nav class="site-nav">
+        <a href="#profile">プロフィール</a>
+        <a href="#music">自作曲</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#tools">Webツール</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="profile">
+  <main class="container">
+    <section id="profile" class="card">
       <h2>プロフィール</h2>
       <p>
         「ひゆー」として、自作曲やWebツール制作などを行っています。
       </p>
     </section>
 
-    <section id="music">
+    <section id="music" class="card">
       <h2>自作曲</h2>
       <p>
         制作した楽曲や、今後公開予定の楽曲について紹介しています。
       </p>
     </section>
 
-    <section id="youtube">
+    <section id="youtube" class="card">
       <h2>YouTube</h2>
       <p>
         YouTubeでは、一部の楽曲や関連コンテンツを公開しています。
       </p>
-      <ul>
-        <li>
-          <a href="www.youtube.com/@HiyuseiLab" target="_blank" rel="noopener noreferrer">
-            YouTubeを見る
-          </a>
-        </li>
-      </ul>
+      <p class="button-row">
+        <a class="button-link" href="www.youtube.com/@HiyuseiLab" target="_blank" rel="noopener noreferrer">
+          YouTubeを見る
+        </a>
+      </p>
     </section>
 
-    <section id="tools">
+    <section id="tools" class="card">
       <h2>Webツール</h2>
       <p>
         日常に役立つ小さなWebツールを公開しています。
       </p>
-      <ul>
+      <ul class="tool-list">
         <li>
           <a href="https://h11u.github.io/Lyrics_Telop/" target="_blank" rel="noopener noreferrer">
             歌詞テロップ作成ツール
@@ -64,8 +67,10 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 飛遊星</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 飛遊星</p>
+    </div>
   </footer>
 </body>
 </html>
