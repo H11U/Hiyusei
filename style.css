@@ -261,3 +261,30 @@ main {
     text-align: center;
   }
 }
+
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.button-link.youtube {
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.button-link.x-link {
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .link-buttons {
+    flex-direction: column;
+  }
+
+  .button-link {
+    text-align: center;
+  }
+}
